@@ -1,0 +1,1 @@
+ALTER TABLE `facture` ADD `observations` TEXT NULL AFTER `texte`;

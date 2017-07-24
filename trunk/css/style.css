@@ -1,0 +1,445 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+body.container {
+    background: url("../img/bg.jpg");
+    z-index: 0;
+    padding: 0;
+}
+.header {
+    width: 100%;
+}
+.homepage {
+    text-align: center;
+    font-size: 36px;
+    vertical-align: middle;
+    color: white;
+    font-family: cursive;
+    line-height: 400px;
+}
+/* OVERRIDE */
+.light-blue.lighten-1 {
+    background-color: #6299af !important;
+}
+
+/*
+* Made By Me
+*/
+
+/***************** In All Pages ********************/
+html{
+    height: 100%;
+}
+.container {
+    max-width: none;
+    position: relative;
+    height: 100%;
+}
+.container-interne {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+.block {
+    display: block;
+    min-height: 120px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.t-red {
+    color: red;
+}
+.bg-blue {
+    background-color: #6299af;
+}
+.t-green {
+    color: green;
+}
+.fixed-action-btn {
+    position: fixed;
+    right: 23px;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 998;
+}
+
+/***************** HEADER *****************/
+
+.header-inscription i{
+	margin-right: 10px;
+}
+
+nav ul li#notifs-li  {
+    text-align: right;
+}
+
+nav ul li ul {
+    position: absolute;
+    z-index: 500;
+    line-height: 30px;
+    margin-top: -5px;
+}
+
+nav ul li ul li {
+    display: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: #6299af;
+    padding: 0px 20px;
+    min-width: 300px;
+}
+
+nav ul li ul li.li-read {
+    background-color: #b8b8b8;
+}
+
+nav ul li#notifs-li:hover ul li, nav ul li#notifs-li ul li:hover {
+    display:block;
+}
+
+nav ul li ul li {
+    float: none;
+}
+.header .container {
+    display: inline-block;
+}
+.header .title {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-size: 28px;
+    font-family: initial;
+}
+.home {
+    position: absolute;
+    z-index: 1;
+}
+.header .icons-header {
+    position: relative;
+    z-index: 1;
+}
+
+/***************** CATEGORIES *****************/
+.container .row{
+    display: inline-block;
+}
+
+.pager{
+    margin: 0;
+    /*width: 20%;*/
+}
+
+.categories-div{
+    width: 20%;
+    height: 92%;
+    margin: 0;
+    padding: 0;
+}
+
+.categories-table{
+    min-width: 177px;
+    background-color: white;
+    height: 100%;
+}
+.categories-table td{
+    border-bottom: rgba(51, 122, 183, 0.14) solid 1px;
+}
+
+.categories-table a{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+/***************** BILLETS *****************/
+div.entete{
+    display: block;
+    height: 20px;
+    margin-bottom: 30px;
+}
+div.entete p {
+    position: relative;
+    float: right;
+    text-align: left;
+}
+div.entete p.billet-votes-count{
+    width: 10%;
+}
+div.entete p.billet-commentaires-count{
+    width: 20%;
+}
+
+.billets-ul{
+    display: block;
+    width: 100%; 
+    height: 65px;
+    background-color: white;   
+}
+.billets-ul li{
+    display: inline-block;
+    padding: 22px 0;
+}
+.billets-ul .utilisateur-photo{
+    float: left;
+    padding: 0;
+}
+.billets-ul .billet-titre{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-overflow: ellipsis;
+}
+.billets-ul .billet-commentaires-count{
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+.billets-ul .billet-votes-count{
+    float: right;
+    width: 10%;
+    height: 100%;
+}
+
+/***************** BILLET *****************/
+div.billet-footer{
+    float: right;
+}
+div.billet-footer p{
+    display: inline-block;
+}
+div.billet-footer #billet-category{
+    font-size: 12px;
+    font-weight: bolder;
+}
+div.billet-footer #billet-date{
+    font-style: italic; 
+}
+.collection-item{
+    padding: 10px;
+}
+.collection{
+    min-width: 580px;
+}
+.collection div{
+    display: inline-block;
+    height: 100%;
+}
+.collection .commentaire-utilisateur{
+    width: 100px;
+}
+.collection .commentaire-message{
+    width: 450px;
+}
+.collection .commentaire-vote{
+    float: right;
+    width: 45px;
+    min-height: 100px;
+}
+.collection .commentaire-vote a{
+    display: block;
+}
+.collection .billet-date{
+    position: relative;
+    left:75%;
+    font-style: italic;
+}
+
+/***************** ADD BILLET *******************/
+.category-select{
+    margin-top: 40px;
+}
+.add-billet {
+    min-height: 500px;
+}
+
+/***************** FOOTER *******************/
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+.footer nav {
+    padding: 0 10px;
+}
+
+/***************** Modals ********************/
+#modal{
+    z-index: 1000;
+}
+.modal {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    max-height: none;
+}
+.modal-body input, .modal-body input{
+    width: 100%;
+    padding: 5px;
+}
+
+.modal-body select {
+    display: block;
+}
+
+/***************** Post Page ********************/
+
+p#vote a {
+    color: #424242;
+}
+
+/***************** Profil Page ******************/
+.profil{
+    min-height: 500px;
+}
+.profil i {
+    color: #999;
+}
+.profile-lastname,
+.profile-mail,
+.profile-description {
+    margin: 0;
+}
+.profil-icon {
+    text-align: center;
+}
+.modif-profil{
+    min-height: 500px;
+}
+.modif-profil .submit {
+    text-align: right;
+}
+.modif-profil textarea {
+    height: 120px;
+}
+.compte {
+    text-align: center;
+}
+
+
+/***************** Tailles **********************/
+.size-xxl {
+    font-size: 80px;
+}
+.size-l {
+    font-size: 28px;
+}
+.size-s {
+    font-size: 14px;
+}
+.f25px {
+    font-size: 25px;
+}
+
+/**************** ALL ********************/
+
+select {
+    display: block;
+    width: 40%;
+    color: black;
+}
+
+select option {
+    color: black;
+}
+
+.input-facture {
+    width: 20% !important;
+    margin-right: 4%! important;
+    display: inline-block;
+}
+
+form {
+    padding: 30px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align; left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+/*************** FACTURE ****************/
+
+.border-line {
+    height: 10px;
+    background-color: #CCCCCC;
+}
+
+.bg-grey {
+    background-color: #E6E6E6;
+}
+
+.mlr15 {
+    margin: 0 15px;
+}
+
+table, table tr, table tr td {
+    border: 1px solid black;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.width120pc {
+    width: 110%;
+    margin-left: -5%;
+}
+
+.light-blue.lighten-1 {
+    background-color: #FF8000 !important;
+}
+
+.btn-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #FF8000;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.submit-btn-btn {
+    background: #FF8000;
+    padding: 10px 15px;
+    color: white !important;
+    border: 1px solid white;
+    border-radius: 5px;
+}

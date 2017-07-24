@@ -1,0 +1,27 @@
+.info {
+    border-style:solid;
+    border-width:2px;
+    border-color:green;
+}
+
+
+/***************** HEADER *******************/
+
+.header {
+    padding: 30px;
+    background: blue;
+    color: white;
+}
+
+
+
+
+
+
+
+/***************** In All Pages ********************/
+
+a {
+    text-decoration: none;
+    color: white !important;
+}

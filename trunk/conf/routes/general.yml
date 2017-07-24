@@ -1,0 +1,275 @@
+root:
+    url:        /
+    controller: AnonymousController
+    action:     index
+    method:     get
+
+testname:
+    url:        /test
+    controller: AnonymousController
+    action:     yopla
+    method:     get
+
+affitem:
+    url:        /item/:id
+    controller: AnonymousController
+    action:     affiche_item
+    method:     get
+
+ajout_info:
+    url:	/ajout_info
+    controller: AnonymousController
+    action: 	insert_info
+    method: 	post
+
+inscription:
+    url:	/inscription
+    controller: UserController
+    action: 	inscription
+    method: 	post
+
+connexion:
+    url:	/connexion
+    controller: UserController
+    action: 	connexion
+    method: 	post
+
+logout:
+    url:	/logout
+    controller: UserController
+    action: 	logout
+    method: 	get
+
+profile:
+    url:	/profil
+    controller: UserController
+    action: 	getProfile
+    method: 	get
+
+edit_profile:
+    url:	/change-profil
+    controller: UserController
+    action: 	editProfile
+    method: 	get
+
+save_profile:
+    url:	/mon-profil
+    controller: UserController
+    action: 	saveProfile
+    method: 	post
+
+users:
+    url:	/utilisateurs
+    controller: UserController
+    action: 	getUsers
+    method: 	get
+
+edit_users:
+    url:	/utilisateurs
+    controller: UserController
+    action: 	editUsers
+    method: 	post
+
+
+categories:
+    url:	/categories
+    controller: CategorieController
+    action: 	getCategories
+    method: 	get
+
+add_category:
+    url:	/categories
+    controller: CategorieController
+    action: 	addCategory
+    method: 	post
+
+edit_category:
+    url:	/edit-category/:id
+    controller: CategorieController
+    action: 	editCategory
+    method: 	post
+
+delete_category:
+    url:	/delete-category/:id
+    controller: CategorieController
+    action: 	deleteCategory
+    method: 	post
+
+billets:
+    url:	/billets/:page
+    controller: BilletController
+    action: 	getBillets
+    method: 	get
+
+add_billet_get:
+    url:	/billet/add
+    controller: BilletController
+    action: 	addBillet
+    method:     get
+    
+add_billet_post:
+    url:	/billet/add
+    controller: BilletController
+    action: 	addBillet
+    method:     post
+
+billet:
+    url:	/billet/:id/:page
+    controller: BilletController
+    action: 	getBillet
+    method:     get
+
+add_comment:
+    url:	/billet/:id
+    controller: BilletController
+    action: 	addComment
+    method: 	post
+
+billets_by_category:
+    url:  /billets-par-category/:id/:page
+    controller: CategorieController
+    action: 	getBilletsByCategory
+    method: 	get
+
+vote:
+    url: /vote/:comment_id/:value/:user_id
+    controller: CommentController
+    action:     vote
+    method:     post
+
+read_notification:
+    url: /notification/lue/:id/:post_id
+    controller: NotificationController
+    action:     readNotification
+    method:     get
+
+
+
+
+
+
+liste_clients:
+    url: /liste-clients
+    controller: ClientController
+    action:     getClients
+    method:     get
+
+client:
+    url: /client/:id
+    controller: ClientController
+    action :    getClient
+    method:     get
+
+edit_client:
+    url: /edit-client/:id
+    controller: ClientController
+    action:     editClient
+    method:     post
+
+add_client:
+    url: /add-client/
+    controller: ClientController
+    action:     addClient
+    method:     get
+
+add_client_complete:
+    url: /add-client-complete/
+    controller: ClientController
+    action:     addClientComplete
+    method:     post
+
+liste_voitures:
+    url: /liste-voitures
+    controller: VoitureController
+    action:     getVoitures
+    method:     get
+
+voiture:
+    url: /voiture/:immatriculation
+    controller: VoitureController
+    action:     getVoiture
+    method:     get
+
+edit_voiture:
+    url: /edit-voiture/:immatriculation
+    controller: VoitureController
+    action:     editVoiture
+    method:     post
+
+add_voiture:
+    url: /add-voiture/
+    controller: VoitureController
+    action:     addVoiture
+    method:     get
+
+add_voiture_complete:
+    url: /add-voiture-complete/
+    controller: VoitureController
+    action:     addVoitureComplete
+    method:     post
+
+liste_factures:
+    url: /liste-factures
+    controller: FactureController
+    action:     getFactures
+    method:     get
+
+facture:
+    url: /facture/:id
+    controller: FactureController
+    action:     getFacture
+    method:     get
+
+edit_facture:
+    url: /edit-facture/:id
+    controller: FactureController
+    action:     editFacture
+    method:     post
+
+edit_facture_complete:
+    url: /edit-facture-complete/:id
+    controller: FactureController
+    action: editFactureComplete
+    method: post
+
+add_facture:
+    url: /add-facture/
+    controller: FactureController
+    action:     addFacture
+    method:     get
+
+add_facture_complete:
+    url: /add-facture-complete/
+    controller: FactureController
+    action:     addFactureComplete
+    method:     post
+
+get_client_by_immat:
+    url: /get_client_by_immat/:immat
+    controller: ClientController
+    action:     getClientByImmatriculation
+    method:     get
+
+generate_facture:
+    url: /generate-facture/:id
+    controller: FactureController
+    action:     getGeneratedFacture
+    method:     get
+
+get_factures_by_clients:
+    url: /factures-by-client/:clientId
+    controller: FactureController
+    action:     getFacturesByClient
+    method:     get
+
+get_clients_for_factures:
+    url: /clients-for-factures/
+    controller: ClientController
+    action:     getClientsForFactures
+    method:     get
+
+get_immats:
+    url: /get-immats/
+    controller: VoitureController
+    action:     getImmats
+    method:     get

@@ -1,0 +1,133 @@
+.info {
+    border-style:solid;
+    border-width:2px;
+    border-color:green;
+}
+
+
+/***************** HEADER *******************/
+
+.header {
+    padding: 30px;
+    background: #333;
+    color: white;
+}
+
+.header a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.header .ui-autocomplete-input {
+    color: #262626;
+}
+
+.header .ui-helper-hidden-accessible {
+    display: none;
+}
+
+#div-autocomplete {
+    text-align: center;
+}
+
+#div-autocomplete > label {
+    float: none !important;
+    display: inline-block !important;
+    font-size: 1.2em;
+    width: auto;
+    margin-right: 20px;
+}
+
+#autocomplete {
+    width: 250px;
+}
+
+.ui-autocomplete {
+    top: 0px !important;
+}
+
+#ui-autocomplete {
+    box-shadow: 2px 0.5px 2px;
+}
+
+
+/***************** FOOTER *******************/
+
+.footer {
+    padding: 30px;
+    background: #454545;
+    color: white;
+    bottom: 0;
+    margin-top: 40px;
+}
+
+
+
+/***************** Modals ********************/
+
+.modal-body input, .modal-body input{
+    width: 100%;
+    padding: 5px;
+}
+
+
+/***************** In All Pages ********************/
+
+.t-center {
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.btn-classic {
+    padding: 20px;
+    background: #b3b3b3;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-classic:hover {
+    text-decoration: none;
+    color: white;
+    background: #454545;
+}
+
+.categories-table th, .categories-table td, .billets-by-categorie-table th, .billets-by-categorie-table td {
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.t-red {
+    color: red;
+}
+
+.div-users table tr th, .div-users table tr td {
+    float: left !important;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.input[type="checkbox"], input[type="radio"] {
+    margin: 0 !important;
+}
+
+.t-green {
+    color: green;
+}
+
+/***************** Post Page ********************/
+
+p#vote a {
+    color: #424242;
+}
